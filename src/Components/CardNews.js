@@ -21,6 +21,8 @@ class CardNews extends HTMLElement{
         
         const linkTitle = document.createElement("a");
         linkTitle.textContent = " "+this.getAttribute("title");
+        linkTitle.href = this.getAttribute("link-url");
+
         const newsContent = document.createElement("p");
         newsContent.textContent = " "+this.getAttribute("content");
 
